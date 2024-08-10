@@ -1,7 +1,22 @@
-var border0 = document.getElementById( 'border' ).content.cloneNode(true);
-document.getElementById( 'container' ).appendChild(border0);
-var border1 = document.getElementById( 'border' ).content.cloneNode(true);
-document.getElementById( 'container' ).appendChild(border1);
+// setting
+const userContent = [
+    ['BLOG', 'https://blog.icysamon.com'],
+    ['GitHub', 'https://github.com/icysamon'],
+    ['Twitter', 'https://twitter.com/icysamon']
+]
+
+// init
+for (let i = 0; i < userContent.length; i++) {
+    const widget = document.getElementById( 'border' ).content.cloneNode(true);
+    const title = document.getElementsByClassName( 'title' );
+    const description = document.getElementsByClassName( 'description' );
+
+    document.getElementById( 'container' ).appendChild(widget);
+    if (title[i] && description[i]) {
+        title[i].textContent = userContent[i][0];
+        description[i].textContent = userContent[i][1];
+    }   
+}
 
 document.addEventListener(
     'DOMContentLoaded',
@@ -19,7 +34,7 @@ document.addEventListener(
             widget[i].addEventListener(
                 'mouseleave',
                 (event) => {
-                    widget[i].style.backgroundColor = '#f0f8ff';
+                    widget[i].style.backgroundColor = 'rgba(240, 248, 255, 0.37)';
                 }
             );
         }
