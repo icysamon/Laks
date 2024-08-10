@@ -1,0 +1,25 @@
+.border {
+    
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.border .widget {
+    color: black;
+    background-color: #f0f8ff;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    opacity: 1.0;
+}
+@media only screen and (max-width: 300px) {
+    .border .widget {
+        width: 100%;
+        float: none; /* 取消浮动，以确保元素占满整个容器宽度 */
+    }
+}
+
+
+.border .widget .content {
+    padding: 25px;
+    color: #db7093;
+}
