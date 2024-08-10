@@ -14,6 +14,7 @@ for (let i = 0; i < userContent.length; i++) {
     document.getElementById( 'container' ).appendChild(widget);
     if (title[i] && description[i]) {
         title[i].textContent = userContent[i][0];
+        description[i].href = userContent[i][1];
         description[i].textContent = userContent[i][1];
     }   
 }
@@ -34,7 +35,7 @@ document.addEventListener(
             widget[i].addEventListener(
                 'mouseleave',
                 (event) => {
-                    widget[i].style.backgroundColor = 'rgba(240, 248, 255, 0.37)';
+                    widget[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
                 }
             );
         }
