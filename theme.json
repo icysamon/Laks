@@ -1,0 +1,7 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"styles": {
+		"css": ".widget {\n    padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    width: 400px;\nheight: 280px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\n}\n\n.post {\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nborder-radius: 25px;\n    padding-left: 5%;\n    padding-right: 5%;\npadding-top: 2rem;\n    padding-bottom: 2rem;\n    margin-top: 2rem;\n    margin-bottom: 2rem;\n}\n\n.grid {\nmargin-left: 2rem;\n}\n\n.container {\n    padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nwidth: 80%;\nmargin: 0 auto;\n}"
+	},
+	"version": 3
+}

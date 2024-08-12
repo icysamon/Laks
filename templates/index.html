@@ -1,0 +1,108 @@
+<script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js">bubbly();</script>
+<script>
+bubbly({
+  colorStart: '#fff4e6',
+  colorStop: '#ffe9e4',
+  blur: 1,
+  compose: 'source-over',
+  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+});
+
+document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+        // DOMContentLoaded
+        const widget = document.getElementsByClassName( 'widget' );
+        for (let i = 0; i < widget.length; i++) {
+            // set widget's eventListener
+            widget[i].addEventListener(
+                'mouseenter',
+                (event) => {
+                    widget[i].style.backgroundColor = 'white';
+                }
+            );
+            widget[i].addEventListener(
+                'mouseleave',
+                (event) => {
+                    widget[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                }
+            );
+        }
+    }  
+);
+
+document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+        // DOMContentLoaded
+        const post = document.getElementsByClassName( 'post' );
+        for (let i = 0; i < post.length; i++) {
+            // set post's eventListener
+            post[i].addEventListener(
+                'mouseenter',
+                (event) => {
+                    post[i].style.backgroundColor = 'white';
+                }
+            );
+            post[i].addEventListener(
+                'mouseleave',
+                (event) => {
+                    post[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                }
+            );
+        }
+    }  
+);
+</script>
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"className":"grid","layout":{"type":"grid","minimumColumnWidth":"400px","columnCount":null}} -->
+<div class="wp-block-group grid"><!-- wp:template-part {"slug":"widget-social","tagName":"div","area":"uncategorized"} /-->
+
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"widget","style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group widget"><!-- wp:heading -->
+<h2 class="wp-block-heading">日文博客</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="https://blog.icysamon.com/"><strong>https://blog.icysamon.com</strong></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">中文博客RSS订阅</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="https://boke.icysamon.com/feed"><strong>https://boke.icysamon.com/feed</strong></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"widget","layout":{"type":"constrained"}} -->
+<div class="wp-block-group widget"><!-- wp:search {"label":"搜索","placeholder":"输入搜索内容...","buttonText":"搜索"} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">本网站仍处于初级建设阶段</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:query {"queryId":7,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"標準"}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+
+<!-- wp:post-excerpt /-->
+
+<!-- wp:separator {"opacity":"css"} -->
+<hr class="wp-block-separator has-css-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:post-date /-->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->

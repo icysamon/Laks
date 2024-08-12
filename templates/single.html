@@ -1,0 +1,82 @@
+<script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js">bubbly();</script>
+<script>
+bubbly({
+  colorStart: '#fff4e6',
+  colorStop: '#ffe9e4',
+  blur: 1,
+  compose: 'source-over',
+  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+});
+
+document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+        // DOMContentLoaded
+        const widget = document.getElementsByClassName( 'widget' );
+        for (let i = 0; i < widget.length; i++) {
+            // set widget's eventListener
+            widget[i].addEventListener(
+                'mouseenter',
+                (event) => {
+                    widget[i].style.backgroundColor = 'white';
+                }
+            );
+            widget[i].addEventListener(
+                'mouseleave',
+                (event) => {
+                    widget[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                }
+            );
+        }
+    }  
+);
+
+document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+        // DOMContentLoaded
+        const container = document.getElementsByClassName( 'container' );
+        for (let i = 0; i < container.length; i++) {
+            // set post's eventListener
+            container[i].addEventListener(
+                'mouseenter',
+                (event) => {
+                    container[i].style.backgroundColor = 'white';
+                }
+            );
+            container[i].addEventListener(
+                'mouseleave',
+                (event) => {
+                    container[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                }
+            );
+        }
+    }  
+);
+</script>
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"70%"} -->
+<div class="wp-block-column" style="flex-basis:70%"><!-- wp:group {"className":"container","layout":{"type":"default"}} -->
+<div class="wp-block-group container"><!-- wp:post-title /-->
+
+<!-- wp:post-date /-->
+
+<!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-content /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:template-part {"slug":"widget-social","area":"uncategorized"} /-->
+
+<!-- wp:group {"metadata":{"name":"カテゴリー"},"className":"widget","layout":{"type":"constrained"}} -->
+<div class="wp-block-group widget"><!-- wp:heading -->
+<h2 class="wp-block-heading">カテゴリー</h2>
+<!-- /wp:heading -->
+
+<!-- wp:post-terms {"term":"category"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
