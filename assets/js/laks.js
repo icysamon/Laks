@@ -11,7 +11,6 @@ script.onload = function() {
         compose: 'source-over',
         bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
         });
-    bubbly();
 };
 
 document.head.appendChild(script);
