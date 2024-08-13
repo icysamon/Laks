@@ -1,7 +1,51 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Noto Sans JP\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "http://boke.icysamon.com/wp-content/uploads/sites/3/fonts/F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj757Y0rw-oME.woff2"
+						}
+					],
+					"fontFamily": "\"Noto Sans JP\", sans-serif",
+					"name": "Noto Sans JP",
+					"slug": "noto-sans-jp"
+				}
+			]
+		}
+	},
 	"styles": {
-		"css": ".widget {\n    padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    width: 400px;\nheight: 280px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\n}\n\n.post {\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nborder-radius: 25px;\n    padding-left: 5%;\n    padding-right: 5%;\npadding-top: 2rem;\n    padding-bottom: 2rem;\n    margin-top: 2rem;\n    margin-bottom: 2rem;\n}\n\n.grid {\nmargin-left: 2rem;\n}\n\n.container {\n    padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nwidth: 80%;\nmargin: 0 auto;\n}"
+		"css": ".widget {\n    padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    width: 400px;\nheight: 280px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\n}\n\n@media (max-width: 1280px) {\n    .widget {\n        padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    width: 100%;\nheight: 280px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nmargin: 0 auto;\n    }\n.grid {\nwidth: 100%;\nmargin: 0 auto;\n}\n.container {\n    padding-left: 0rem;\n    padding-right: 0rem;\n}\n}\n\n.post {\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nborder-radius: 25px;\n    padding-left: 5%;\n    padding-right: 5%;\npadding-top: 2rem;\n    padding-bottom: 2rem;\n    margin-top: 2rem;\n    margin-bottom: 2rem;\n}\n\n\n.container {\n    padding-left: 3rem;\n    padding-right: 3rem;\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\nwidth: 80%;\nmargin: 0 auto;\nfloat: right;\n}\n\n.cat {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    color: black;\n    border-radius: 25px;\n    width: 400px;\nheight: 280px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\n}\n\n\n.cat-h {\npadding-left: 3rem;\n}\n\n.cat-item {\npadding-left: 1rem;\nheight: 2rem;\nlist-style-type: none;\n}\n\n.cat-item a {\ntext-decoration: none;\n}\n\n.widget-home {\n    padding-left: 3rem;\n    padding-top: 1rem;\npadding-bottom: 1rem;\n    color: black;\n    border-radius: 25px;\n    width: 400px;\nheight: 70px;\n    opacity: 1.0;\n    background-color: rgba(240, 248, 255, 0.5);\n    backdrop-filter:blur(5px);\n}\n\n.widget-title {\ntext-decoration: none;\n}\n\n",
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+				}
+			},
+			"link": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+		}
 	},
 	"version": 3
 }
