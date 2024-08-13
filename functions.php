@@ -1,3 +1,6 @@
 <?php
-//add_filter( 'show_admin_bar', '__return_true' );
-//link rel="stylesheet" href="<?php bloginfo('template_url'); /assets/css/font-awesome.min.css"
+function add_font_awesome() {
+    wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri().'/assets/css/font-awesome.css');
+    wp_enqueue_style( 'font-awesome.min', get_stylesheet_directory_uri().'/assets/css/font-awesome.min.css');
+}
+add_action('wp_enqueue_scripts', 'add_font_awesome');
