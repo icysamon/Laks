@@ -1,7 +1,11 @@
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"width":"60%"} -->
-<div class="wp-block-column" style="flex-basis:60%"><!-- wp:group {"className":"container","layout":{"type":"default"}} -->
-<div class="wp-block-group container"><!-- wp:post-title /-->
+<div class="wp-block-columns"><!-- wp:column {"width":"10%"} -->
+<div class="wp-block-column" style="flex-basis:10%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"60%","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:group {"className":"container widget-style","layout":{"type":"default"}} -->
+<div class="wp-block-group container widget-style"><!-- wp:post-title {"textAlign":"left"} /-->
 
 <!-- wp:post-date /-->
 
@@ -11,25 +15,27 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:template-part {"slug":"widget-social","area":"uncategorized"} /-->
+<!-- wp:column {"width":"%","className":"columns-limit","layout":{"type":"constrained","contentSize":"400px","wideSize":"5vw"}} -->
+<div class="wp-block-column columns-limit"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"top","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:template-part {"slug":"widget-social","tagName":"div","area":"uncategorized"} /-->
 
-<!-- wp:group {"className":"widget-home","layout":{"type":"constrained"}} -->
-<div class="wp-block-group widget-home"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:html -->
-<i class="fa fa-home" aria-hidden="true"> <a href="https://boke.icysamon.com/"><strong>Home Page</strong></a></i>
+<!-- wp:group {"className":"widget-home widget-style","layout":{"type":"default"}} -->
+<div class="wp-block-group widget-home widget-style"><!-- wp:html -->
+<i class="fa fa-home" aria-hidden="true"> <a style="text-decoration: none;" href="https://boke.icysamon.com/"><strong>Home Page</strong></a></i>
 <!-- /wp:html --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"カテゴリー"},"className":"cat","layout":{"type":"constrained"}} -->
-<div class="wp-block-group cat"><!-- wp:heading {"className":"cat-h"} -->
+<!-- wp:group {"metadata":{"name":"カテゴリー"},"className":"cat widget-style","layout":{"type":"default"}} -->
+<div class="wp-block-group cat widget-style"><!-- wp:heading {"className":"cat-h"} -->
 <h2 class="wp-block-heading cat-h">标签</h2>
 <!-- /wp:heading -->
 
 <!-- wp:categories {"showEmpty":true} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"10%"} -->
+<div class="wp-block-column" style="flex-basis:10%"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

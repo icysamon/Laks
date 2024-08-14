@@ -19,19 +19,19 @@ document.addEventListener(
     'DOMContentLoaded',
     () => {
         // DOMContentLoaded
-        const widget = document.getElementsByClassName( 'widget' );
-        for (let i = 0; i < widget.length; i++) {
-            // set widget's eventListener
-            widget[i].addEventListener(
+        const widgetStyle = document.getElementsByClassName( 'widget-style' );
+        for (let i = 0; i < widgetStyle.length; i++) {
+            // set post's eventListener
+            widgetStyle[i].addEventListener(
                 'mouseenter',
                 (event) => {
-                    widget[i].style.backgroundColor = 'white';
+                    widgetStyle[i].style.backgroundColor = 'white';
                 }
             );
-            widget[i].addEventListener(
+            widgetStyle[i].addEventListener(
                 'mouseleave',
                 (event) => {
-                    widget[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                    widgetStyle[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
                 }
             );
         }
@@ -42,44 +42,28 @@ document.addEventListener(
     'DOMContentLoaded',
     () => {
         // DOMContentLoaded
-        const container = document.getElementsByClassName( 'container' );
-        for (let i = 0; i < container.length; i++) {
+        const post = document.getElementsByClassName( 'post' );
+        for (let i = 0; i < post.length; i++) {
             // set post's eventListener
-            container[i].addEventListener(
+            post[i].addEventListener(
                 'mouseenter',
                 (event) => {
-                    container[i].style.backgroundColor = 'white';
+                    post[i].style.backgroundColor = 'white';
                 }
             );
-            container[i].addEventListener(
+            post[i].addEventListener(
                 'mouseleave',
                 (event) => {
-                    container[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                    post[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
                 }
             );
         }
     }  
 );
 
-document.addEventListener(
-    'DOMContentLoaded',
-    () => {
-        // DOMContentLoaded
-        const cat = document.getElementsByClassName( 'cat' );
-        for (let i = 0; i < cat.length; i++) {
-            // set post's eventListener
-            cat[i].addEventListener(
-                'mouseenter',
-                (event) => {
-                    cat[i].style.backgroundColor = 'white';
-                }
-            );
-            cat[i].addEventListener(
-                'mouseleave',
-                (event) => {
-                    cat[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
-                }
-            );
-        }
-    }  
-);
+var container = document.getElementsByClassName('container');
+if (container[0] != null){
+    if (container[0].clientHeight < window.innerHeight) {
+        container[0].style.height = window.innerHeight * 0.8 + 'px';
+    }
+}

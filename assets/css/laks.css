@@ -1,3 +1,8 @@
+.edit-post-visual-editor__content-area {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .widget {
     padding-left: 3rem;
     padding-right: 3rem;
