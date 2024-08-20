@@ -1,10 +1,36 @@
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"grid","layout":{"type":"grid","minimumColumnWidth":"25rem","columnCount":null}} -->
-<div class="wp-block-group grid"><!-- wp:template-part {"slug":"widget-social","tagName":"div","area":"uncategorized"} /-->
+<div class="wp-block-columns"><!-- wp:column {"width":"5%"} -->
+<div class="wp-block-column" style="flex-basis:5%"></div>
+<!-- /wp:column -->
 
-<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"widget widget-style","style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group widget widget-style"><!-- wp:heading -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"className":"is-style-default","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"grid","minimumColumnWidth":"25rem","columnCount":null}} -->
+<div class="wp-block-group is-style-default" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"><!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading -->
+<h2 class="wp-block-heading">icysamon</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>icysamon@gmail.com</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:social-links -->
+<ul class="wp-block-social-links"><!-- wp:social-link {"url":"https://boke.icysamon.com/feed","service":"feed"} /-->
+
+<!-- wp:social-link {"url":"https://mastodon.social/@icysamon","service":"mastodon"} /-->
+
+<!-- wp:social-link {"url":"icysamon.com","service":"wordpress"} /-->
+
+<!-- wp:social-link {"url":"https://open.spotify.com/intl-ja/artist/7tk5ryKLzZdGvABO1H0LCx","service":"spotify"} /-->
+
+<!-- wp:social-link {"url":"https://twitter.com/icysamon","service":"twitter"} /-->
+
+<!-- wp:social-link {"url":"https://github.com/icysamon","service":"github"} /--></ul>
+<!-- /wp:social-links --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"is-style-widget","style":{"layout":{"columnSpan":1,"rowSpan":1},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading -->
 <h2 class="wp-block-heading">日文博客</h2>
 <!-- /wp:heading -->
 
@@ -21,8 +47,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"widget widget-style","layout":{"type":"constrained"}} -->
-<div class="wp-block-group widget widget-style"><!-- wp:search {"label":"搜索","placeholder":"输入搜索内容...","buttonText":"搜索"} /-->
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:search {"label":"搜索","placeholder":"输入搜索内容...","buttonText":"搜索"} /-->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">本网站仍处于初级建设阶段</h2>
@@ -34,18 +60,20 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:query {"queryId":7,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"標準"}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
-<!-- wp:post-title {"isLink":true} /-->
+<!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-widget" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:post-title {"isLink":true} /-->
 
 <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
 <!-- wp:post-excerpt /-->
 
-<!-- wp:separator {"opacity":"css"} -->
-<hr class="wp-block-separator has-css-opacity"/>
-<!-- /wp:separator -->
-
-<!-- wp:post-date /-->
+<!-- wp:post-date /--></div>
+<!-- /wp:group -->
 <!-- /wp:post-template --></div>
 <!-- /wp:query --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"5%"} -->
+<div class="wp-block-column" style="flex-basis:5%"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

@@ -1,44 +1,19 @@
-.edit-post-visual-editor__content-area {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
 .widget {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: black;
-    border-radius: 25px;
-    width: 400px;
+    width: 100%;
     height: 280px;
-    opacity: 1.0;
-    background-color: rgba(240, 248, 255, 0.5);
-    backdrop-filter:blur(5px);
 }
 
+.grid {
+    padding: 2rem;
+}
 @media (max-width: 1280px) {
-    .widget {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        color: black;
-        border-radius: 25px;
-        width: 100%;
-        height: 280px;
-        opacity: 1.0;
-        background-color: rgba(240, 248, 255, 0.5);
-        backdrop-filter:blur(5px);
-        margin: 0 auto;
-    }
     .grid {
         width: 100%;
         margin: 0 auto;
-    }
-    .container {
-        padding-left: 0rem;
-        padding-right: 0rem;
     }
 }
 
@@ -60,26 +35,15 @@
     padding-right: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: black;
-    border-radius: 25px;
-    opacity: 1.0;
-    background-color: rgba(240, 248, 255, 0.5);
-    backdrop-filter:blur(5px);
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    float: right;
 }
 
 .cat {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: black;
-    border-radius: 25px;
-    width: 400px;
+    width: 100%;
     height: 280px;
-    opacity: 1.0;
-    background-color: rgba(240, 248, 255, 0.5);
-    backdrop-filter:blur(5px);
 }
 
 .cat-h {
@@ -98,17 +62,33 @@
 
 .widget-home {
     padding-left: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: black;
-    border-radius: 25px;
-    width: 400px;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
     height: 70px;
-    opacity: 1.0;
-    background-color: rgba(240, 248, 255, 0.5);
-    backdrop-filter:blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto;
 }
 
 .widget-title {
     text-decoration: none;
+}
+
+.widget-style {
+    opacity: 1.0;
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter:blur(5px);
+    border-radius: 25px;
+}
+
+.columns-limit {
+    min-width: 280px;
+}
+
+.not-fund {
+    padding: 3rem;
 }

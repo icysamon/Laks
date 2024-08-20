@@ -19,7 +19,7 @@ document.addEventListener(
     'DOMContentLoaded',
     () => {
         // DOMContentLoaded
-        const widgetStyle = document.getElementsByClassName( 'widget-style' );
+        const widgetStyle = document.getElementsByClassName( 'is-style-widget' );
         for (let i = 0; i < widgetStyle.length; i++) {
             // set post's eventListener
             widgetStyle[i].addEventListener(
@@ -32,29 +32,6 @@ document.addEventListener(
                 'mouseleave',
                 (event) => {
                     widgetStyle[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
-                }
-            );
-        }
-    }  
-);
-
-document.addEventListener(
-    'DOMContentLoaded',
-    () => {
-        // DOMContentLoaded
-        const post = document.getElementsByClassName( 'post' );
-        for (let i = 0; i < post.length; i++) {
-            // set post's eventListener
-            post[i].addEventListener(
-                'mouseenter',
-                (event) => {
-                    post[i].style.backgroundColor = 'white';
-                }
-            );
-            post[i].addEventListener(
-                'mouseleave',
-                (event) => {
-                    post[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
                 }
             );
         }
