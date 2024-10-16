@@ -1,20 +1,3 @@
-var script = document.createElement('script');
-script.src = "https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js";
-
-
-
-script.onload = function() {
-    bubbly({
-        colorStart: '#fff4e6',
-        colorStop: '#ffe9e4',
-        blur: 1,
-        compose: 'source-over',
-        bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
-        });
-};
-
-document.head.appendChild(script);
-
 document.addEventListener(
     'DOMContentLoaded',
     () => {
@@ -25,13 +8,13 @@ document.addEventListener(
             widgetStyle[i].addEventListener(
                 'mouseenter',
                 (event) => {
-                    widgetStyle[i].style.backgroundColor = 'white';
+                    widgetStyle[i].style.backgroundColor = '#faebd7';
                 }
             );
             widgetStyle[i].addEventListener(
                 'mouseleave',
                 (event) => {
-                    widgetStyle[i].style.backgroundColor = 'rgba(240, 248, 255, 0.5)';
+                    widgetStyle[i].style.backgroundColor = '#faf0e6';
                 }
             );
         }

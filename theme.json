@@ -13,46 +13,21 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "\"Noto Sans JP\"",
+							"fontFamily": "Noto Sans JP",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": "file:./assets/fonts/NotoSansJP-Regular.ttf"
+							"src": "file:./assets/fonts/noto-sans-jp.ttf"
 						}
 					],
 					"fontFamily": "\"Noto Sans JP\", sans-serif",
 					"name": "Noto Sans JP",
-					"slug": "noto-sans-jp"
+					"slug": "body"
 				}
 			]
 		}
 	},
 	"styles": {
-		"css": "",
-		"elements": {
-			"button": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
-				}
-			},
-			"caption": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
-				}
-			},
-			"heading": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
-				}
-			},
-			"link": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
-				}
-			}
-		},
-		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
-		}
+		"css": ""
 	},
 	"version": 3
 }
