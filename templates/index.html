@@ -6,7 +6,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:query {"queryId":7,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"標準"}} -->
+<div class="wp-block-column"><!-- wp:query {"queryId":7,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"taxQuery":null},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"標準"}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-widget" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:post-title {"isLink":true} /-->
@@ -15,12 +15,14 @@
 
 <!-- wp:post-date /--></div>
 <!-- /wp:group -->
-<!-- /wp:post-template --></div>
-<!-- /wp:query -->
+<!-- /wp:post-template -->
 
-<!-- wp:post-navigation-link {"type":"previous"} /-->
+<!-- wp:query-pagination {"paginationArrow":"chevron","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"前のページ","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"medium"} /-->
 
-<!-- wp:post-navigation-link /--></div>
+<!-- wp:query-pagination-next {"label":"次のページ","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"medium"} /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -62,6 +64,10 @@
 <!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:search {"label":"検索","placeholder":"...","buttonText":"検索"} /--></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-widget","layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-widget"><!-- wp:categories {"showHierarchy":true,"showPostCounts":true} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
