@@ -11,17 +11,23 @@
 <!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-widget" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:post-title {"isLink":true} /-->
 
+<!-- wp:post-terms {"term":"category","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|30"}}}} /-->
+
 <!-- wp:post-excerpt /-->
 
 <!-- wp:post-date /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:query-pagination {"paginationArrow":"chevron","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<!-- wp:query-pagination-previous {"label":"前のページ","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"medium"} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:query-pagination {"fontSize":"medium","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
 
-<!-- wp:query-pagination-next {"label":"次のページ","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"medium"} /-->
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination --></div>
+<!-- /wp:group --></div>
 <!-- /wp:query --></div>
 <!-- /wp:column -->
 
@@ -33,41 +39,69 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>icysamon@gmail.com</p>
+<p><strong>icysamon@gmail.com</strong></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links -->
+<!-- wp:social-links {"openInNewTab":true} -->
 <ul class="wp-block-social-links"><!-- wp:social-link {"url":"https://boke.icysamon.com/feed","service":"feed"} /-->
+
+<!-- wp:social-link {"url":"https://github.com/icysamon","service":"github"} /-->
 
 <!-- wp:social-link {"url":"https://mastodon.social/@icysamon","service":"mastodon"} /-->
 
-<!-- wp:social-link {"url":"icysamon.com","service":"wordpress"} /-->
-
-<!-- wp:social-link {"url":"https://open.spotify.com/intl-ja/artist/7tk5ryKLzZdGvABO1H0LCx","service":"spotify"} /-->
-
-<!-- wp:social-link {"url":"https://twitter.com/icysamon","service":"twitter"} /-->
-
-<!-- wp:social-link {"url":"https://github.com/icysamon","service":"github"} /--></ul>
+<!-- wp:social-link {"url":"https://open.spotify.com/intl-ja/artist/7tk5ryKLzZdGvABO1H0LCx","service":"spotify"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"is-style-widget","style":{"layout":{"columnSpan":1,"rowSpan":1},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32"},"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading -->
-<h2 class="wp-block-heading">ブログ</h2>
+<h2 class="wp-block-heading">検索</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><a href="https://blog.icysamon.com/"><strong>https://blog.icysamon.com</strong></a></p>
+<!-- wp:search {"label":"","showLabel":false,"placeholder":"内容を入力してください","buttonText":"検索","buttonUseIcon":true} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32"},"className":"is-style-widget","style":{"layout":{"columnSpan":1,"rowSpan":1},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading -->
+<h2 class="wp-block-heading">サイト情報</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#424242"}}},"color":{"text":"#424242"}}} -->
+<p class="has-text-color has-link-color" style="color:#424242"><strong>Theme Laks By icysamon</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"color":{"text":"#424242"},"elements":{"link":{"color":{"text":"#424242"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#424242"><strong>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2023 – 2024&nbsp;&nbsp;icysamon</strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/32","name":"ウィジェット"},"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:search {"label":"検索","placeholder":"...","buttonText":"検索"} /--></div>
+<!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading -->
+<h2 class="wp-block-heading">稼働時間</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<p id="RunTime" style="color:#5B5B5B; font-weight: bold"></p>
+<script>
+var BootDate = new Date("2023/05/14 00:00:00");
+function ShowRunTime(id) {
+var NowDate = new Date();
+var RunDateM = parseInt(NowDate - BootDate);
+var RunDays = Math.floor(RunDateM/(24*3600*1000));
+var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
+var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
+var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
+var RunTime = RunDays + "d " + RunHours + "h " + RunMinutes + "m " + RunSeconds + "s ";
+document.getElementById(id).innerHTML = "<b>Running : </b>" + RunTime;
+}
+setInterval("ShowRunTime('RunTime')", 1000);
+</script>
+<!-- /wp:html --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"is-style-widget","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-widget"><!-- wp:categories {"showHierarchy":true,"showPostCounts":true} /--></div>
+<!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:categories {"showHierarchy":true,"showPostCounts":true} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
