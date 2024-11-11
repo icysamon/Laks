@@ -24,6 +24,6 @@ document.addEventListener(
 var container = document.getElementsByClassName('container');
 if (container[0] != null){
     if (container[0].clientHeight < window.innerHeight) {
-        container[0].style.height = window.innerHeight * 0.8 + 'px';
+        container[0].style.height = window.innerHeight * 1.0 + 'px';
     }
 }
