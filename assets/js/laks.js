@@ -1,4 +1,4 @@
-document.addEventListener(
+/*document.addEventListener(
     'DOMContentLoaded',
     () => {
         // DOMContentLoaded
@@ -8,18 +8,18 @@ document.addEventListener(
             widgetStyle[i].addEventListener(
                 'mouseenter',
                 (event) => {
-                    widgetStyle[i].style.backgroundColor = '#faebd7';
+                    widgetStyle[i].style.backgroundColor = '#ffffff';
                 }
             );
             widgetStyle[i].addEventListener(
                 'mouseleave',
                 (event) => {
-                    widgetStyle[i].style.backgroundColor = '#faf0e6';
+                    widgetStyle[i].style.backgroundColor = '#ffffff';
                 }
             );
         }
     }  
-);
+);*/
 
 var container = document.getElementsByClassName('container');
 if (container[0] != null){

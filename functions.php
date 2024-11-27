@@ -25,8 +25,8 @@ function themeslug_register_block_styles() {
         'name' => 'widget',
         'label' => __( 'Widget', 'themeslug' ),
         'inline_style' => '.wp-block-group.is-style-widget {
-            background-color: #faf0e6;
-            border-radius: 25px;
+            background-color: #2f2f2f;
+            border-radius: 8px;
         }' 
     ) );
 }
@@ -35,8 +35,7 @@ add_action( 'init', 'themeslug_register_block_styles' );
 
 // Mathjax3
 function add_mathjax_script() {
-    wp_enqueue_script('mathjax-polyfill', 'https://polyfill.io/v3/polyfill.min.js?features=es6', array(), '1.0', true);
-    wp_enqueue_script('mathjax-script', 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js', array('mathjax-polyfill'), '1.0', true);
+    wp_enqueue_script('mathjax-script', 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js');
 }
 add_action('wp_enqueue_scripts', 'add_mathjax_script');
 
@@ -61,5 +60,28 @@ function add_prism() {
 }
 add_action('wp_enqueue_scripts', 'add_prism');
 
+function hide_plugin() {
+    // Hide the google site kit menu
+    remove_menu_page('googlesitekit-dashboard');
+
+    // Hide the W3 Total Cache
+    remove_menu_page('w3tc_dashboard');
+    remove_submenu_page('upload.php', 'w3tc_extension_page_imageservice');
+}
+add_action('admin_menu', 'hide_plugin', 999);
+
+// remove tool bar item
+function remove_toolbar_node($wp_admin_bar) {
+    $wp_admin_bar->remove_menu("google-site-kit");
+    $wp_admin_bar->remove_menu("w3tc");
+}
+add_action("admin_bar_menu", "remove_toolbar_node", 999);
+
+function ds_admin_theme_style() {
+//echo '<style>.update-nag, .updated, .error, .is-dismissible { display: none; }</style>';}
+echo '<style>.is-dismissible { display: none !important; }</style>';
+}
+add_action('admin_enqueue_scripts', 'ds_admin_theme_style', 999); 
+add_action('login_enqueue_scripts', 'ds_admin_theme_style', 999);
 
 
