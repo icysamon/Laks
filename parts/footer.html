@@ -1,6 +1,6 @@
-<!-- wp:group {"className":"is-style-widget","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-widget" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:html -->
-<center><p id="RunTime" style="color:#FFFFFF; font-weight: bold"></p></center>
+<!-- wp:group {"className":"is-style-default","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"color":{"background":"#f5f5f7"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-default has-background" style="background-color:#f5f5f7;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:html -->
+<center><p id="RunTime" style="color: #0000008F; font-size: var(--wp--preset--font-size--small);"></p></center>
 <script>
 var BootDate = new Date("2023/05/13 00:00:00");
 function ShowRunTime(id) {
@@ -11,17 +11,17 @@ var RunHours = Math.floor(RunDateM%(24*3600*1000)/(3600*1000));
 var RunMinutes = Math.floor(RunDateM%(24*3600*1000)%(3600*1000)/(60*1000));
 var RunSeconds = Math.round(RunDateM%(24*3600*1000)%(3600*1000)%(60*1000)/1000);
 var RunTime = RunDays + "d " + RunHours + "h " + RunMinutes + "m " + RunSeconds + "s ";
-document.getElementById(id).innerHTML = "<b>Running : </b>" + RunTime;
+document.getElementById(id).innerHTML = "Running : " + RunTime;
 }
 setInterval("ShowRunTime('RunTime')", 1000);
 </script>
 <!-- /wp:html -->
 
-<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color has-link-color"><strong>Theme <a href="https://github.com/icysamon/laks" target="_blank" rel="noreferrer noopener">Laks</a> By icysamon</strong></p>
+<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"#0000008f"}}},"color":{"text":"#0000008f"}},"fontSize":"small"} -->
+<p class="has-text-align-center has-text-color has-link-color has-small-font-size" style="color:#0000008f">Theme <a href="https://github.com/icysamon/laks" target="_blank" rel="noreferrer noopener">laks</a> By icysamon</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color has-link-color"><strong>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2023 – 2024&nbsp;&nbsp;icysamon</strong></p>
+<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"#0000008f"}}},"color":{"text":"#0000008f"}},"fontSize":"small"} -->
+<p class="has-text-align-center has-text-color has-link-color has-small-font-size" style="color:#0000008f">Copyright  ©  2023 – 2025  icysamon</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

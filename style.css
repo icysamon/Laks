@@ -7,9 +7,29 @@ Description: laks はあらゆるウェブサイトに適用できるように�
 Requires at least: 6.6
 Tested up to: 6.6
 Requires PHP: 8.2
-Version: 0.1
+Version: 0.2.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: laks
 Tags: サイトエディター, エディタースタイル, Font Awesome 4
 */
+
+.laks-head-group {
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    background-color: rgba(245, 245, 247, 0.8);
+}
+
+.is-menu-open {
+    height: 200px;
+    background-color: rgba(245, 245, 247, 0.95) !important;
+    backdrop-filter: blur(5px);
+}
+
+.laks-navigation-menu {
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+}

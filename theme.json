@@ -28,24 +28,29 @@
 	},
 	"styles": {
 		"color": {
-			"background": "#18181e",
-			"text": "#8ff2b0"
+			"background": "#fefefe",
+			"text": "var(--wp--preset--color--black)"
 		},
-		"css": ".navigation {\nletter-spacing: 6px;\n}\n    ",
+		"css": "",
 		"elements": {
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--pale-pink)"
+				}
+			},
 			"caption": {
 				"color": {
-					"text": "#1fbe84"
+					"text": "var(--wp--preset--color--vivid-cyan-blue)"
 				}
 			},
 			"heading": {
 				"color": {
-					"text": "#83d6f0"
+					"text": "#ef9b9b"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "#8ff2b0"
+					"text": "var(--wp--preset--color--black)"
 				}
 			}
 		}

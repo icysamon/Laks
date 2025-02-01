@@ -25,8 +25,18 @@ function themeslug_register_block_styles() {
         'name' => 'widget',
         'label' => __( 'Widget', 'themeslug' ),
         'inline_style' => '.wp-block-group.is-style-widget {
-            background-color: #2f2f2f;
+            background-color: #FCE7E6;
             border-radius: 8px;
+        }' 
+    ) );
+
+    register_block_style( 'core/group', array(
+        'name' => 'glass',
+        'label' => __( 'Glass', 'themeslug' ),
+        'inline_style' => '.wp-block-group.is-style-glass {
+            background-color: #F5F5F7CC;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
         }' 
     ) );
 }
@@ -54,34 +64,16 @@ function add_prism() {
         get_stylesheet_directory_uri().'/assets/js/prism.js' // location of the prism.js file
     );
 
+    wp_register_style(
+        'laksCSS',
+        get_stylesheet_directory_uri().'/style.css'
+    );
+
     // Enqueue the registered style and script files
     wp_enqueue_style('prismCSS');
+    wp_enqueue_style('laksCSS');
     wp_enqueue_script('prismJS');
 }
 add_action('wp_enqueue_scripts', 'add_prism');
-
-function hide_plugin() {
-    // Hide the google site kit menu
-    remove_menu_page('googlesitekit-dashboard');
-
-    // Hide the W3 Total Cache
-    remove_menu_page('w3tc_dashboard');
-    remove_submenu_page('upload.php', 'w3tc_extension_page_imageservice');
-}
-add_action('admin_menu', 'hide_plugin', 999);
-
-// remove tool bar item
-function remove_toolbar_node($wp_admin_bar) {
-    $wp_admin_bar->remove_menu("google-site-kit");
-    $wp_admin_bar->remove_menu("w3tc");
-}
-add_action("admin_bar_menu", "remove_toolbar_node", 999);
-
-function ds_admin_theme_style() {
-//echo '<style>.update-nag, .updated, .error, .is-dismissible { display: none; }</style>';}
-echo '<style>.is-dismissible { display: none !important; }</style>';
-}
-add_action('admin_enqueue_scripts', 'ds_admin_theme_style', 999); 
-add_action('login_enqueue_scripts', 'ds_admin_theme_style', 999);
 
 
