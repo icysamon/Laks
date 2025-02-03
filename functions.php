@@ -34,9 +34,8 @@ function themeslug_register_block_styles() {
         'name' => 'glass',
         'label' => __( 'Glass', 'themeslug' ),
         'inline_style' => '.wp-block-group.is-style-glass {
-            background-color: #F5F5F7CC;
+            background-color: #ffffffcc;
             border-radius: 8px;
-            backdrop-filter: blur(5px);
         }' 
     ) );
 }

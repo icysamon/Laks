@@ -4,6 +4,16 @@
 		"dimensions": {
 			"minHeight": true
 		},
+		"shadow": {
+			"defaultPresets": true,
+			"presets": [
+				{
+					"name": "Laks A",
+					"shadow": "2px 2px 15px rgba(0, 0, 0, 0.2)",
+					"slug": "laks a"
+				}
+			]
+		},
 		"spacing": {
 			"margin": true,
 			"padding": true
@@ -28,13 +38,14 @@
 	},
 	"styles": {
 		"color": {
-			"background": "#fefefe",
+			"background": "#ffffff",
 			"text": "var(--wp--preset--color--black)"
 		},
 		"css": "",
 		"elements": {
 			"button": {
 				"color": {
+					"background": "var(--wp--preset--color--white)",
 					"text": "var(--wp--preset--color--pale-pink)"
 				}
 			},
@@ -45,7 +56,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "#ef9b9b"
+					"text": "var(--wp--preset--color--pale-pink)"
 				}
 			},
 			"link": {
