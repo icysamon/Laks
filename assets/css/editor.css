@@ -1,0 +1,8 @@
+.post-type-post .wp-block {
+    max-width: 800px;
+    margin: auto;
+}
+.post-type-page .wp-block {
+    max-width: 800px;
+    margin: auto;
+}

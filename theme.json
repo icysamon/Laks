@@ -1,6 +1,98 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
 	"settings": {
+		"blocks": {
+			"core/image": {
+				"appearanceTools": false,
+				"border": {
+					"color": false,
+					"radius": false,
+					"style": false,
+					"width": false
+				},
+				"color": {
+					"background": true,
+					"button": true,
+					"caption": true,
+					"custom": true,
+					"customDuotone": true,
+					"customGradient": true,
+					"defaultDuotone": true,
+					"defaultGradients": true,
+					"defaultPalette": true,
+					"duotone": [],
+					"gradients": [],
+					"heading": true,
+					"link": false,
+					"palette": [],
+					"text": true
+				},
+				"dimensions": {
+					"minHeight": true
+				},
+				"lightbox": {
+					"allowEditing": true,
+					"enabled": true
+				},
+				"shadow": {
+					"defaultPresets": true,
+					"presets": [
+						{
+							"name": "Laks A",
+							"shadow": "2px 2px 15px rgba(0, 0, 0, 0.2)",
+							"slug": "laks a"
+						}
+					]
+				},
+				"spacing": {
+					"customSpacingSize": true,
+					"defaultSpacingSizes": true,
+					"margin": true,
+					"padding": true,
+					"spacingScale": {
+						"default": {
+							"increment": 1.5,
+							"mediumStep": 1.5,
+							"operator": "*",
+							"steps": 7,
+							"unit": "rem"
+						}
+					},
+					"spacingSizes": [],
+					"units": false
+				},
+				"typography": {
+					"customFontSize": true,
+					"defaultFontSizes": true,
+					"dropCap": true,
+					"fontFamilies": [
+						{
+							"fontFace": [
+								{
+									"fontFamily": "Noto Sans JP",
+									"fontStyle": "normal",
+									"fontWeight": "400",
+									"src": "file:./assets/fonts/noto-sans-jp.ttf"
+								}
+							],
+							"fontFamily": "\"Noto Sans JP\", sans-serif",
+							"name": "Noto Sans JP",
+							"slug": "body"
+						}
+					],
+					"fontSizes": [],
+					"fontStyle": true,
+					"fontWeight": true,
+					"letterSpacing": true,
+					"lineHeight": false,
+					"textAlign": true,
+					"textDecoration": true,
+					"textTransform": true,
+					"writingMode": false
+				},
+				"useRootPaddingAwareAlignments": false
+			}
+		},
 		"dimensions": {
 			"minHeight": true
 		},
@@ -37,6 +129,19 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/image": {
+				"css": "",
+				"variations": {
+					"rounded": {
+						"css": ""
+					}
+				}
+			},
+			"core/navigation-link": {
+				"css": "margin-right: 1.2rem;\nmargin-left: 1.2rem;"
+			}
+		},
 		"color": {
 			"background": "#ffffff",
 			"text": "var(--wp--preset--color--black)"
@@ -47,23 +152,38 @@
 				"color": {
 					"background": "var(--wp--preset--color--white)",
 					"text": "var(--wp--preset--color--pale-pink)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--body)"
 				}
 			},
 			"caption": {
 				"color": {
-					"text": "var(--wp--preset--color--vivid-cyan-blue)"
+					"text": "#ff6c91"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--body)"
 				}
 			},
 			"heading": {
 				"color": {
 					"text": "var(--wp--preset--color--pale-pink)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--body)"
 				}
 			},
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--black)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--body)"
 				}
 			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)"
 		}
 	},
 	"version": 3
