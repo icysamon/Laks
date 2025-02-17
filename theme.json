@@ -2,18 +2,20 @@
 	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
 	"settings": {
 		"blocks": {
+			"core/group": {
+				"spacing": {
+					"margin": true
+				}
+			},
 			"core/image": {
-				"appearanceTools": false,
+				"appearanceTools": true,
 				"border": {
 					"color": false,
-					"radius": false,
 					"style": false,
 					"width": false
 				},
 				"color": {
 					"background": true,
-					"button": true,
-					"caption": true,
 					"custom": true,
 					"customDuotone": true,
 					"customGradient": true,
@@ -22,13 +24,9 @@
 					"defaultPalette": true,
 					"duotone": [],
 					"gradients": [],
-					"heading": true,
 					"link": false,
 					"palette": [],
 					"text": true
-				},
-				"dimensions": {
-					"minHeight": true
 				},
 				"lightbox": {
 					"allowEditing": true,
@@ -47,8 +45,6 @@
 				"spacing": {
 					"customSpacingSize": true,
 					"defaultSpacingSizes": true,
-					"margin": true,
-					"padding": true,
 					"spacingScale": {
 						"default": {
 							"increment": 1.5,
@@ -130,6 +126,9 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/group": {
+				"css": "margin-left: 0.5rem;\nmargin-right: 0.5rem;"
+			},
 			"core/image": {
 				"css": "",
 				"variations": {
@@ -140,6 +139,9 @@
 			},
 			"core/navigation-link": {
 				"css": "margin-right: 1.2rem;\nmargin-left: 1.2rem;"
+			},
+			"core/post-template": {
+				"css": ""
 			}
 		},
 		"color": {
@@ -182,6 +184,7 @@
 				}
 			}
 		},
+		"spacing": [],
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--body)"
 		}
