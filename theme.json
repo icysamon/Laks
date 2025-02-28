@@ -68,7 +68,7 @@
 									"fontFamily": "Noto Sans JP",
 									"fontStyle": "normal",
 									"fontWeight": "400",
-									"src": "file:./assets/fonts/noto-sans-jp.ttf"
+									"src": "https://www.cdn.icysamon.com/font/noto-sans-jp/static/NotoSansJP-Regular.ttf"
 								}
 							],
 							"fontFamily": "\"Noto Sans JP\", sans-serif",
@@ -114,12 +114,25 @@
 							"fontFamily": "Noto Sans JP",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": "file:./assets/fonts/noto-sans-jp.ttf"
+							"src": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
 						}
 					],
 					"fontFamily": "\"Noto Sans JP\", sans-serif",
 					"name": "Noto Sans JP",
 					"slug": "body"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "ABeeZee",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "https://blog.icysamon.jp/wp-content/uploads/sites/2/fonts/esDR31xSG-6AGleN6teukbcHCpE.woff2"
+						}
+					],
+					"fontFamily": "ABeeZee, sans-serif",
+					"name": "ABeeZee",
+					"slug": "abeezee"
 				}
 			]
 		}
@@ -128,6 +141,9 @@
 		"blocks": {
 			"core/group": {
 				"css": "margin-left: 0.5rem;\nmargin-right: 0.5rem;"
+			},
+			"core/home-link": {
+				"css": "margin-right: 1.2rem;\nmargin-left: 1.2rem;"
 			},
 			"core/image": {
 				"css": "",
