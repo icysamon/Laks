@@ -1,31 +1,18 @@
 /*
 Theme Name: laks
-Theme URI: https://icysamon.com
+Theme URI: https://laks.icysamon.jp
 Author: icysamon
-Author URI: https://icysamon.com
+Author URI: https://icysamon.jp
 Description: laks はあらゆるウェブサイトに適用できるように設計されたワードプレスのテーマです。
 Requires at least: 6.6
 Tested up to: 6.6
 Requires PHP: 8.2
-Version: 0.2.0
+Version: 0.2.2
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: laks
-Tags: サイトエディター, エディタースタイル, Font Awesome 4
+Tags: サイトエディター, エディタースタイル
 */
-
-.laks-head-group {
-    height: auto;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(245, 245, 247, 0.8);
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    border-radius: 0;
-}
 
 .is-menu-open {
     height: 300px;
@@ -33,7 +20,9 @@ Tags: サイトエディター, エディタースタイル, Font Awesome 4
     backdrop-filter: blur(5px);
 }
 
-.wp-block-image.wp-lightbox-container{
-    max-width: 400px;
-    height: auto;
+.wp-block-post-title a{
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.wp-block-post-title a:hover{
+    color: #e75c7f;
 }

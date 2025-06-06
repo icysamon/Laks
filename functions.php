@@ -17,15 +17,6 @@ function themeslug_register_block_styles() {
         'is_default' => true,
         'inline_style' => '.wp-block-group.is-style-default {}' 
     ) );
-    
-    register_block_style( 'core/group', array(
-        'name' => 'widget',
-        'label' => __( 'Widget', 'themeslug' ),
-        'inline_style' => '.wp-block-group.is-style-widget {
-            background-color: #FCE7E6;
-            border-radius: 8px;
-        }' 
-    ) );
 
     register_block_style( 'core/group', array(
         'name' => 'glass',
@@ -38,17 +29,7 @@ function themeslug_register_block_styles() {
 }
 add_action( 'init', 'themeslug_register_block_styles' );
 
-// Add font awesome
-function add_font_awesome() {
-    wp_register_style(
-        'fontAwesomeCSS',
-        get_stylesheet_directory_uri().'/assets/font-awesome-4.7.0/css/font-awesome.min.css'
-    );
-    wp_enqueue_style('fontAwesomeCSS');
-}
-add_action( 'wp_enqueue_scripts', 'add_font_awesome' );
-
-// Add laks.css
+// Add style.css
 function add_laks_css() {
     wp_register_style(
         'laksCSS',
@@ -62,11 +43,14 @@ add_action('wp_enqueue_scripts', 'add_laks_css');
 function add_prism() {
     wp_register_script(
         'prismJS',
-        'https://www.cdn.icysamon.jp/prism/prism.js'
+        get_stylesheet_directory_uri().'/assets/js/prism.js',
+        array(),
+		'1.0',
+        true
     );
     wp_register_style(
         'prismCSS',
-        'https://www.cdn.icysamon.jp/prism/prism.css'
+        get_stylesheet_directory_uri().'/assets/css/prism.css',
     );
     wp_enqueue_script('prismJS');
     wp_enqueue_style('prismCSS');
@@ -75,7 +59,20 @@ add_action('wp_enqueue_scripts', 'add_prism');
 
 // Mathjax3
 function add_mathjax_script() {
-    //wp_enqueue_script('mathjax-script', 'https://www.cdn.icysamon.jp/mathjax/es5/tex-mml-chtml.js');
     wp_enqueue_script('mathjax-script', get_stylesheet_directory_uri().'/assets/js/mathjax.js');
 }
 add_action('wp_enqueue_scripts', 'add_mathjax_script');
+
+// SMTP Mail
+function custom_smtp_settings( $phpmailer ) {
+    $phpmailer->isSMTP();
+    $phpmailer->Host = SMTP_HOST;
+    $phpmailer->Port = SMTP_PORT;
+    $phpmailer->Username = SMTP_USER;
+    $phpmailer->Password = SMTP_PASS;
+    $phpmailer->FromName = SMTP_NAME;
+    $phpmailer->From = SMTP_FROM;
+    $phpmailer->SMTPSecure = SMTP_SECURE;
+    $phpmailer->SMTPAuth = SMTP_AUTH;
+}
+add_action( 'phpmailer_init', 'custom_smtp_settings' );

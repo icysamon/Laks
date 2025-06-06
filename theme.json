@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
 	"settings": {
 		"blocks": {
 			"core/group": {
@@ -63,17 +63,9 @@
 					"dropCap": true,
 					"fontFamilies": [
 						{
-							"fontFace": [
-								{
-									"fontFamily": "Noto Sans JP",
-									"fontStyle": "normal",
-									"fontWeight": "400",
-									"src": "https://www.cdn.icysamon.com/font/noto-sans-jp/static/NotoSansJP-Regular.ttf"
-								}
-							],
-							"fontFamily": "\"Noto Sans JP\", sans-serif",
-							"name": "Noto Sans JP",
-							"slug": "body"
+							"fontFamily": "\"Yu Gothic\", sans-serif",
+							"name": "Yu Gothic",
+							"slug": "yu-gothic"
 						}
 					],
 					"fontSizes": [],
@@ -106,41 +98,15 @@
 			"margin": true,
 			"padding": true
 		},
-		"typography": {
-			"fontFamilies": [
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Noto Sans JP",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
-						}
-					],
-					"fontFamily": "\"Noto Sans JP\", sans-serif",
-					"name": "Noto Sans JP",
-					"slug": "body"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "ABeeZee",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": "https://blog.icysamon.jp/wp-content/uploads/sites/2/fonts/esDR31xSG-6AGleN6teukbcHCpE.woff2"
-						}
-					],
-					"fontFamily": "ABeeZee, sans-serif",
-					"name": "ABeeZee",
-					"slug": "abeezee"
-				}
-			]
-		}
+		"typography": []
 	},
 	"styles": {
 		"blocks": {
+			"core/columns": {
+				"css": ""
+			},
 			"core/group": {
-				"css": "margin-left: 0.5rem;\nmargin-right: 0.5rem;"
+				"css": ""
 			},
 			"core/home-link": {
 				"css": "margin-right: 1.2rem;\nmargin-left: 1.2rem;"
@@ -153,18 +119,47 @@
 					}
 				}
 			},
+			"core/media-text": {
+				"css": "border-radius: 8px;\noverflow: hidden;"
+			},
 			"core/navigation-link": {
 				"css": "margin-right: 1.2rem;\nmargin-left: 1.2rem;"
 			},
+			"core/post-featured-image": {
+				"css": ""
+			},
 			"core/post-template": {
 				"css": ""
+			},
+			"core/post-title": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			},
+			"core/query-pagination-next": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			},
+			"core/query-pagination-numbers": {
+				"css": "letter-spacing: 0.7em"
+			},
+			"core/query-pagination-previous": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			},
+			"core/separator": {
+				"color": {
+					"background": "#909090c2"
+				}
 			}
 		},
 		"color": {
-			"background": "#ffffff",
+			"background": "#f7f7f8",
 			"text": "var(--wp--preset--color--black)"
 		},
-		"css": "",
+		"css": ".is-style-glass.left{max-width: 800px;margin-left:auto;}.is-style-glass.right{max-width: 400px;}",
 		"elements": {
 			"button": {
 				"color": {
@@ -172,7 +167,7 @@
 					"text": "var(--wp--preset--color--pale-pink)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--body)"
+					"fontFamily": "var(--wp--preset--font-family--yu-gothic)"
 				}
 			},
 			"caption": {
@@ -180,7 +175,7 @@
 					"text": "#ff6c91"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--body)"
+					"fontFamily": "var(--wp--preset--font-family--yu-gothic)"
 				}
 			},
 			"heading": {
@@ -188,7 +183,7 @@
 					"text": "var(--wp--preset--color--pale-pink)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--body)"
+					"fontFamily": "var(--wp--preset--font-family--yu-gothic)"
 				}
 			},
 			"link": {
@@ -196,13 +191,13 @@
 					"text": "var(--wp--preset--color--black)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--body)"
+					"fontFamily": "var(--wp--preset--font-family--yu-gothic)"
 				}
 			}
 		},
 		"spacing": [],
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--body)"
+			"fontFamily": "var(--wp--preset--font-family--yu-gothic)"
 		}
 	},
 	"version": 3
