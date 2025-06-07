@@ -13,13 +13,6 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: laks
 Tags: サイトエディター, エディタースタイル
 */
-
-.is-menu-open {
-    height: 300px;
-    background-color: rgba(245, 245, 247, 0.95) !important;
-    backdrop-filter: blur(5px);
-}
-
 .wp-block-post-title a{
     transition: color .1s ease-in-out;
 }

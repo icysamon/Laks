@@ -6,3 +6,15 @@
     max-width: 800px;
     margin: auto;
 }
+.post-type-post .wp-block-paragraph {
+    margin: 1em auto;
+}
+.post-type-page .wp-block-paragraph {
+    margin: 1em auto;
+}
+.post-type-post .wp-block-quote {
+    color: rgb(78, 78, 78);
+}
+.post-type-page .wp-block-quote {
+    color: rgb(78, 78, 78);
+}
