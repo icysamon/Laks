@@ -148,14 +148,23 @@
 			},
 			"core/query-pagination-next": {
 				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "700",
 					"textDecoration": "none"
 				}
 			},
 			"core/query-pagination-numbers": {
-				"css": "letter-spacing: 0.7em"
+				"css": "",
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "700",
+					"letterSpacing": "0.2em"
+				}
 			},
 			"core/query-pagination-previous": {
 				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "700",
 					"textDecoration": "none"
 				}
 			},
