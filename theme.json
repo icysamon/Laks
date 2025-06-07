@@ -132,6 +132,16 @@
 				"css": ""
 			},
 			"core/post-title": {
+				"color": {
+					"text": "var(--wp--preset--color--pale-pink)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--pale-pink)"
+						}
+					}
+				},
 				"typography": {
 					"textDecoration": "none"
 				}
@@ -159,11 +169,11 @@
 			"background": "#f7f7f8",
 			"text": "var(--wp--preset--color--black)"
 		},
-		"css": ".is-style-glass.left{max-width: 800px;margin-left:auto;}.is-style-glass.right{max-width: 400px;}",
+		"css": ".is-style-glass.left{max-width: 800px;}\n.is-style-glass.right{max-width: 400px;}\n@media screen and (max-width: 800px){.is-style-glass.right{max-width: 800px;}}",
 		"elements": {
 			"button": {
 				"color": {
-					"background": "var(--wp--preset--color--white)",
+					"background": "#ffd4d4",
 					"text": "var(--wp--preset--color--pale-pink)"
 				},
 				"typography": {
@@ -172,7 +182,7 @@
 			},
 			"caption": {
 				"color": {
-					"text": "#ff6c91"
+					"text": "var(--wp--preset--color--black)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--yu-gothic)"
