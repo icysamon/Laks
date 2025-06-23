@@ -1,8 +1,9 @@
 # WordPress Theme Laks
+![](screenshot.jpg)
 ## About
 Laks is a wordpress block theme create by icysamon.
 
-The theme is primarily designed for publishing blogs and portfolios.It supports Mathjax and Code Highlighter Functions.
+The theme is primarily designed for publishing blogs and portfolios. It supports Mathjax and Code Highlighter Functions.
 
 This project has been discontinued because the author has moved the blog to Hugo.
 
